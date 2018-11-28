@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E48D50C21AEFF420E6BFB9E /* libPods-SYBankCardType.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB7311FD401ED9BB9753E8A /* libPods-SYBankCardType.a */; };
+		95C3B2224FB38D18164953FE /* libPods-SYBankCardTypeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 122ED1105F6E66037E6E437B /* libPods-SYBankCardTypeTests.a */; };
+		BEC3B48DC4E7CB8BAA5434F7 /* libPods-SYBankCardTypeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAA51CC2E9B8CF674217825 /* libPods-SYBankCardTypeUITests.a */; };
+		D0F7B28A21AE3C0F00F6EB24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B28921AE3C0F00F6EB24 /* AppDelegate.m */; };
+		D0F7B28D21AE3C0F00F6EB24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B28C21AE3C0F00F6EB24 /* ViewController.m */; };
+		D0F7B29021AE3C0F00F6EB24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F7B28E21AE3C0F00F6EB24 /* Main.storyboard */; };
+		D0F7B29221AE3C1200F6EB24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F7B29121AE3C1200F6EB24 /* Assets.xcassets */; };
+		D0F7B29521AE3C1200F6EB24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F7B29321AE3C1200F6EB24 /* LaunchScreen.storyboard */; };
+		D0F7B29821AE3C1200F6EB24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B29721AE3C1200F6EB24 /* main.m */; };
+		D0F7B2A221AE3C1200F6EB24 /* SYBankCardTypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B2A121AE3C1200F6EB24 /* SYBankCardTypeTests.m */; };
+		D0F7B2AD21AE3C1200F6EB24 /* SYBankCardTypeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B2AC21AE3C1200F6EB24 /* SYBankCardTypeUITests.m */; };
+		D0F7B2BD21AE3C6700F6EB24 /* SYBankCardManger.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B2BC21AE3C6700F6EB24 /* SYBankCardManger.m */; };
+		D0F7B2BF21AE3CC200F6EB24 /* SYBanks.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0F7B2BE21AE3CC200F6EB24 /* SYBanks.plist */; };
+		D0F7B2C221AE3CF100F6EB24 /* SYBanksModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F7B2C121AE3CF100F6EB24 /* SYBanksModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0F7B29E21AE3C1200F6EB24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F7B27D21AE3C0F00F6EB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F7B28421AE3C0F00F6EB24;
+			remoteInfo = SYBankCardType;
+		};
+		D0F7B2A921AE3C1200F6EB24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0F7B27D21AE3C0F00F6EB24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F7B28421AE3C0F00F6EB24;
+			remoteInfo = SYBankCardType;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C403FE14468F91998D62D5 /* Pods-SYBankCardTypeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardTypeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardTypeUITests/Pods-SYBankCardTypeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FAA51CC2E9B8CF674217825 /* libPods-SYBankCardTypeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYBankCardTypeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		122ED1105F6E66037E6E437B /* libPods-SYBankCardTypeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYBankCardTypeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2393DCC8D8B8FB1EC7ECC5F6 /* Pods-SYBankCardTypeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardTypeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardTypeTests/Pods-SYBankCardTypeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32EA008A985FF1EF7CF584F8 /* Pods-SYBankCardType.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardType.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardType/Pods-SYBankCardType.debug.xcconfig"; sourceTree = "<group>"; };
+		447FD647F0A4E858F2CF1844 /* Pods-SYBankCardTypeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardTypeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardTypeUITests/Pods-SYBankCardTypeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8CB7311FD401ED9BB9753E8A /* libPods-SYBankCardType.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYBankCardType.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F7B28521AE3C0F00F6EB24 /* SYBankCardType.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYBankCardType.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F7B28821AE3C0F00F6EB24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0F7B28921AE3C0F00F6EB24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0F7B28B21AE3C0F00F6EB24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0F7B28C21AE3C0F00F6EB24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0F7B28F21AE3C0F00F6EB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0F7B29121AE3C1200F6EB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0F7B29421AE3C1200F6EB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0F7B29621AE3C1200F6EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F7B29721AE3C1200F6EB24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0F7B29D21AE3C1200F6EB24 /* SYBankCardTypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYBankCardTypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F7B2A121AE3C1200F6EB24 /* SYBankCardTypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBankCardTypeTests.m; sourceTree = "<group>"; };
+		D0F7B2A321AE3C1200F6EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F7B2A821AE3C1200F6EB24 /* SYBankCardTypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYBankCardTypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F7B2AC21AE3C1200F6EB24 /* SYBankCardTypeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBankCardTypeUITests.m; sourceTree = "<group>"; };
+		D0F7B2AE21AE3C1200F6EB24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F7B2BB21AE3C6700F6EB24 /* SYBankCardManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBankCardManger.h; sourceTree = "<group>"; };
+		D0F7B2BC21AE3C6700F6EB24 /* SYBankCardManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBankCardManger.m; sourceTree = "<group>"; };
+		D0F7B2BE21AE3CC200F6EB24 /* SYBanks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SYBanks.plist; sourceTree = "<group>"; };
+		D0F7B2C021AE3CF100F6EB24 /* SYBanksModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYBanksModel.h; sourceTree = "<group>"; };
+		D0F7B2C121AE3CF100F6EB24 /* SYBanksModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYBanksModel.m; sourceTree = "<group>"; };
+		F17EB6AE4F33B55FA60CE5DF /* Pods-SYBankCardType.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardType.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardType/Pods-SYBankCardType.release.xcconfig"; sourceTree = "<group>"; };
+		F603C8DCE15D3F8875E45EFB /* Pods-SYBankCardTypeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBankCardTypeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBankCardTypeTests/Pods-SYBankCardTypeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0F7B28221AE3C0F00F6EB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E48D50C21AEFF420E6BFB9E /* libPods-SYBankCardType.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B29A21AE3C1200F6EB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C3B2224FB38D18164953FE /* libPods-SYBankCardTypeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B2A521AE3C1200F6EB24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC3B48DC4E7CB8BAA5434F7 /* libPods-SYBankCardTypeUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E02806F2D59CDDB7D05112A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32EA008A985FF1EF7CF584F8 /* Pods-SYBankCardType.debug.xcconfig */,
+				F17EB6AE4F33B55FA60CE5DF /* Pods-SYBankCardType.release.xcconfig */,
+				2393DCC8D8B8FB1EC7ECC5F6 /* Pods-SYBankCardTypeTests.debug.xcconfig */,
+				F603C8DCE15D3F8875E45EFB /* Pods-SYBankCardTypeTests.release.xcconfig */,
+				07C403FE14468F91998D62D5 /* Pods-SYBankCardTypeUITests.debug.xcconfig */,
+				447FD647F0A4E858F2CF1844 /* Pods-SYBankCardTypeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B75315F6196815BD533E5314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB7311FD401ED9BB9753E8A /* libPods-SYBankCardType.a */,
+				122ED1105F6E66037E6E437B /* libPods-SYBankCardTypeTests.a */,
+				0FAA51CC2E9B8CF674217825 /* libPods-SYBankCardTypeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0F7B27C21AE3C0F00F6EB24 = {
+			isa = PBXGroup;
+			children = (
+				D0F7B2BA21AE3C4800F6EB24 /* SYBankCardTool */,
+				D0F7B28721AE3C0F00F6EB24 /* SYBankCardType */,
+				D0F7B2A021AE3C1200F6EB24 /* SYBankCardTypeTests */,
+				D0F7B2AB21AE3C1200F6EB24 /* SYBankCardTypeUITests */,
+				D0F7B28621AE3C0F00F6EB24 /* Products */,
+				5E02806F2D59CDDB7D05112A /* Pods */,
+				B75315F6196815BD533E5314 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0F7B28621AE3C0F00F6EB24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7B28521AE3C0F00F6EB24 /* SYBankCardType.app */,
+				D0F7B29D21AE3C1200F6EB24 /* SYBankCardTypeTests.xctest */,
+				D0F7B2A821AE3C1200F6EB24 /* SYBankCardTypeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0F7B28721AE3C0F00F6EB24 /* SYBankCardType */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7B28821AE3C0F00F6EB24 /* AppDelegate.h */,
+				D0F7B28921AE3C0F00F6EB24 /* AppDelegate.m */,
+				D0F7B28B21AE3C0F00F6EB24 /* ViewController.h */,
+				D0F7B28C21AE3C0F00F6EB24 /* ViewController.m */,
+				D0F7B28E21AE3C0F00F6EB24 /* Main.storyboard */,
+				D0F7B29121AE3C1200F6EB24 /* Assets.xcassets */,
+				D0F7B29321AE3C1200F6EB24 /* LaunchScreen.storyboard */,
+				D0F7B29621AE3C1200F6EB24 /* Info.plist */,
+				D0F7B29721AE3C1200F6EB24 /* main.m */,
+			);
+			path = SYBankCardType;
+			sourceTree = "<group>";
+		};
+		D0F7B2A021AE3C1200F6EB24 /* SYBankCardTypeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7B2A121AE3C1200F6EB24 /* SYBankCardTypeTests.m */,
+				D0F7B2A321AE3C1200F6EB24 /* Info.plist */,
+			);
+			path = SYBankCardTypeTests;
+			sourceTree = "<group>";
+		};
+		D0F7B2AB21AE3C1200F6EB24 /* SYBankCardTypeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7B2AC21AE3C1200F6EB24 /* SYBankCardTypeUITests.m */,
+				D0F7B2AE21AE3C1200F6EB24 /* Info.plist */,
+			);
+			path = SYBankCardTypeUITests;
+			sourceTree = "<group>";
+		};
+		D0F7B2BA21AE3C4800F6EB24 /* SYBankCardTool */ = {
+			isa = PBXGroup;
+			children = (
+				D0F7B2BE21AE3CC200F6EB24 /* SYBanks.plist */,
+				D0F7B2BB21AE3C6700F6EB24 /* SYBankCardManger.h */,
+				D0F7B2BC21AE3C6700F6EB24 /* SYBankCardManger.m */,
+				D0F7B2C021AE3CF100F6EB24 /* SYBanksModel.h */,
+				D0F7B2C121AE3CF100F6EB24 /* SYBanksModel.m */,
+			);
+			path = SYBankCardTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0F7B28421AE3C0F00F6EB24 /* SYBankCardType */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F7B2B121AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardType" */;
+			buildPhases = (
+				916D8D004F19F218CCBDEC82 /* [CP] Check Pods Manifest.lock */,
+				D0F7B28121AE3C0F00F6EB24 /* Sources */,
+				D0F7B28221AE3C0F00F6EB24 /* Frameworks */,
+				D0F7B28321AE3C0F00F6EB24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYBankCardType;
+			productName = SYBankCardType;
+			productReference = D0F7B28521AE3C0F00F6EB24 /* SYBankCardType.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0F7B29C21AE3C1200F6EB24 /* SYBankCardTypeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F7B2B421AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardTypeTests" */;
+			buildPhases = (
+				5A2A0107324A72724B1B2EED /* [CP] Check Pods Manifest.lock */,
+				D0F7B29921AE3C1200F6EB24 /* Sources */,
+				D0F7B29A21AE3C1200F6EB24 /* Frameworks */,
+				D0F7B29B21AE3C1200F6EB24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0F7B29F21AE3C1200F6EB24 /* PBXTargetDependency */,
+			);
+			name = SYBankCardTypeTests;
+			productName = SYBankCardTypeTests;
+			productReference = D0F7B29D21AE3C1200F6EB24 /* SYBankCardTypeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0F7B2A721AE3C1200F6EB24 /* SYBankCardTypeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F7B2B721AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardTypeUITests" */;
+			buildPhases = (
+				0F0D2AC2132475CC5452F291 /* [CP] Check Pods Manifest.lock */,
+				D0F7B2A421AE3C1200F6EB24 /* Sources */,
+				D0F7B2A521AE3C1200F6EB24 /* Frameworks */,
+				D0F7B2A621AE3C1200F6EB24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0F7B2AA21AE3C1200F6EB24 /* PBXTargetDependency */,
+			);
+			name = SYBankCardTypeUITests;
+			productName = SYBankCardTypeUITests;
+			productReference = D0F7B2A821AE3C1200F6EB24 /* SYBankCardTypeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0F7B27D21AE3C0F00F6EB24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = FaceBook;
+				TargetAttributes = {
+					D0F7B28421AE3C0F00F6EB24 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D0F7B29C21AE3C1200F6EB24 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D0F7B28421AE3C0F00F6EB24;
+					};
+					D0F7B2A721AE3C1200F6EB24 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = D0F7B28421AE3C0F00F6EB24;
+					};
+				};
+			};
+			buildConfigurationList = D0F7B28021AE3C0F00F6EB24 /* Build configuration list for PBXProject "SYBankCardType" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0F7B27C21AE3C0F00F6EB24;
+			productRefGroup = D0F7B28621AE3C0F00F6EB24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0F7B28421AE3C0F00F6EB24 /* SYBankCardType */,
+				D0F7B29C21AE3C1200F6EB24 /* SYBankCardTypeTests */,
+				D0F7B2A721AE3C1200F6EB24 /* SYBankCardTypeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0F7B28321AE3C0F00F6EB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F7B29521AE3C1200F6EB24 /* LaunchScreen.storyboard in Resources */,
+				D0F7B29221AE3C1200F6EB24 /* Assets.xcassets in Resources */,
+				D0F7B2BF21AE3CC200F6EB24 /* SYBanks.plist in Resources */,
+				D0F7B29021AE3C0F00F6EB24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B29B21AE3C1200F6EB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B2A621AE3C1200F6EB24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F0D2AC2132475CC5452F291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYBankCardTypeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2A0107324A72724B1B2EED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYBankCardTypeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		916D8D004F19F218CCBDEC82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYBankCardType-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0F7B28121AE3C0F00F6EB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F7B28D21AE3C0F00F6EB24 /* ViewController.m in Sources */,
+				D0F7B2C221AE3CF100F6EB24 /* SYBanksModel.m in Sources */,
+				D0F7B2BD21AE3C6700F6EB24 /* SYBankCardManger.m in Sources */,
+				D0F7B29821AE3C1200F6EB24 /* main.m in Sources */,
+				D0F7B28A21AE3C0F00F6EB24 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B29921AE3C1200F6EB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F7B2A221AE3C1200F6EB24 /* SYBankCardTypeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F7B2A421AE3C1200F6EB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F7B2AD21AE3C1200F6EB24 /* SYBankCardTypeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0F7B29F21AE3C1200F6EB24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F7B28421AE3C0F00F6EB24 /* SYBankCardType */;
+			targetProxy = D0F7B29E21AE3C1200F6EB24 /* PBXContainerItemProxy */;
+		};
+		D0F7B2AA21AE3C1200F6EB24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F7B28421AE3C0F00F6EB24 /* SYBankCardType */;
+			targetProxy = D0F7B2A921AE3C1200F6EB24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0F7B28E21AE3C0F00F6EB24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F7B28F21AE3C0F00F6EB24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0F7B29321AE3C1200F6EB24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F7B29421AE3C1200F6EB24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0F7B2AF21AE3C1200F6EB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0F7B2B021AE3C1200F6EB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0F7B2B221AE3C1200F6EB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32EA008A985FF1EF7CF584F8 /* Pods-SYBankCardType.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardType/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0F7B2B321AE3C1200F6EB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17EB6AE4F33B55FA60CE5DF /* Pods-SYBankCardType.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardType/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardType;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0F7B2B521AE3C1200F6EB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2393DCC8D8B8FB1EC7ECC5F6 /* Pods-SYBankCardTypeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardTypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardTypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYBankCardType.app/SYBankCardType";
+			};
+			name = Debug;
+		};
+		D0F7B2B621AE3C1200F6EB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F603C8DCE15D3F8875E45EFB /* Pods-SYBankCardTypeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardTypeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardTypeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SYBankCardType.app/SYBankCardType";
+			};
+			name = Release;
+		};
+		D0F7B2B821AE3C1200F6EB24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C403FE14468F91998D62D5 /* Pods-SYBankCardTypeUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardTypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardTypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SYBankCardType;
+			};
+			name = Debug;
+		};
+		D0F7B2B921AE3C1200F6EB24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447FD647F0A4E858F2CF1844 /* Pods-SYBankCardTypeUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SYBankCardTypeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FaceBook.SYBankCardTypeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SYBankCardType;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0F7B28021AE3C0F00F6EB24 /* Build configuration list for PBXProject "SYBankCardType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F7B2AF21AE3C1200F6EB24 /* Debug */,
+				D0F7B2B021AE3C1200F6EB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F7B2B121AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardType" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F7B2B221AE3C1200F6EB24 /* Debug */,
+				D0F7B2B321AE3C1200F6EB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F7B2B421AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardTypeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F7B2B521AE3C1200F6EB24 /* Debug */,
+				D0F7B2B621AE3C1200F6EB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F7B2B721AE3C1200F6EB24 /* Build configuration list for PBXNativeTarget "SYBankCardTypeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F7B2B821AE3C1200F6EB24 /* Debug */,
+				D0F7B2B921AE3C1200F6EB24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0F7B27D21AE3C0F00F6EB24 /* Project object */;
+}
