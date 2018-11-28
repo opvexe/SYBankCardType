@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SYBankCardManger.h"
 #import "SYBanksModel.h"
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 @property(nonatomic,strong)UILabel *showLabel;
 @property(nonatomic,strong)UITextField *showField;
 @end
@@ -33,16 +33,57 @@
         [self.view addSubview:iv];
         iv.leftViewMode = UITextFieldViewModeAlways;
         iv.keyboardType =  UIKeyboardTypeDecimalPad;
-        [iv addTarget:self action:@selector(textChangeAction:) forControlEvents:UIControlEventEditingChanged];
+        iv.delegate = self;
         iv.backgroundColor = [UIColor orangeColor];
         iv;
     });
 }
 
--(void)textChangeAction:(UITextField *)tf{
-    NSArray *souce = [[SYBankCardManger shareInstance]searchWithInputString:tf.text withFieldArray:@[@"bin"]];
-    SYBanksModel *model = souce.firstObject;
-    self.showLabel.text = [NSString stringWithFormat:@"%@--%@--%@",model.bin,model.name,model.type];
-    NSLog(@"%@",souce);
+#pragma mark  UITextFieldDelegate
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    NSString *text = [self.showField text];
+    
+    //返回一个字符集,指定字符串中包含的字符
+    NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789\b"];
+    
+    if ([string rangeOfCharacterFromSet:[characterSet invertedSet]].location != NSNotFound) {
+        return NO;
+    }
+    
+    text = [text stringByReplacingCharactersInRange:range withString:string];
+    text = [text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    //不能写nil
+    NSString *newString = @"";
+    while (text.length > 0) {
+        //每4位截取/不够4位有多少截取多少
+        NSString *subString = [text substringToIndex:MIN(text.length, 4)];
+        newString = [newString stringByAppendingString:subString];
+        //加空格
+        if (subString.length == 4) {
+            newString = [newString stringByAppendingString:@" "];
+        }
+        text = [text substringFromIndex:MIN(text.length, 4)];
+    }
+    newString = [newString stringByTrimmingCharactersInSet:[characterSet invertedSet]];
+    //限制长度
+    if (newString.length >= 24) {
+        return NO;
+    }
+    
+    [self.showField setText:newString];
+    NSString *originalStr = [newString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    //获取银行信息
+    NSArray *souce = [[SYBankCardManger shareInstance]searchWithInputString:originalStr withFieldArray:@[@"bin"]];
+    if (souce.count) {
+        SYBanksModel *model = souce.firstObject;
+        self.showLabel.text = [NSString stringWithFormat:@"%@--%@--%@",model.bin,model.name,model.type];
+    }
+    
+    return NO;
 }
+
+
 @end
